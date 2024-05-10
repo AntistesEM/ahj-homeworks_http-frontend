@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <main class="container">
+    <div id="loader" class="loader-container">
+      <div class="loader"></div>
+    </div>    
+    <button class="add-tickets">Добавить тикет</button>
+    <div class="list-tickets">
+      <!-- <div class="ticket">
+        <div class="wrap">
+          <div class="ticket-input-wrap">
+            <label>
+              <input type="checkbox" class="ticket-input">
+              <span class="ticket-input-span"></span>
+            </label>
+            <span class="ticket-title">Поменять краску в принтере, ком. 404</span>
+          </div>
+          <div class="ticket-btns">
+            <span class="ticket-date">10.03.19 08:40</span>
+            <button class="ticket-btn-edit"></button>
+            <button class="ticket-btn-delete"></button>
+          </div>
+        </div>
+        <p class="description">Принтер HP LJ1210, картриджи на складе</p>        
+      </div>
+      <div class="ticket">
+        <div class="wrap">
+          <div class="ticket-input-wrap">
+            <label>
+              <input type="checkbox" class="ticket-input">
+              <span class="ticket-input-span"></span>
+            </label>
+            <span class="ticket-title">Переустановить Windows, ПК-Hall24</span>
+          </div>
+          <div class="ticket-btns">
+            <span class="ticket-date">10.03.19 08:40</span>
+            <button class="ticket-btn-edit"></button>
+            <button class="ticket-btn-delete"></button>
+          </div>
+        </div>
+        <p class="description">Принтер HP LJ1210, картриджи на складе</p>        
+      </div>
+      <div class="ticket">
+        <div class="wrap">
+          <div class="ticket-input-wrap">
+            <label>
+              <input type="checkbox" class="ticket-input">
+              <span class="ticket-input-span"></span>
+            </label>
+            <span class="ticket-title">Установить обновление KB-XXX</span>
+          </div>
+          <div class="ticket-btns">
+            <span class="ticket-date">10.03.19 08:40</span>
+            <button class="ticket-btn-edit"></button>
+            <button class="ticket-btn-delete"></button>
+          </div>
+        </div>
+        <p class="description">
+          Вышло критическое обновление для Windows, нужно поставить обновления в следующем приоритете:
+          1. Сервера (не забыть сделать бэкап!)
+          2. Рабочие станции
+        </p>        
+      </div> -->
+    </div>
+  </main>  
+
+  <div class="modal add">
+    <h2 class="modal-title">Добавить тикет</h2>
+    <form class="modal-form">
+      <div class="description-wrap">
+        <span>Краткое описание</span>
+        <input class="modal-input" type="text" name="имя_поля" placeholder="Введите текст">
+      </div>
+      <div class="description-wrap">
+        <span>Подробное описание</span>
+        <textarea class="modal-textarea" name="имя_поля" placeholder="Введите текст"></textarea>
+      </div>
+      <div class="modal-btns">
+        <button class="btn-cancel" type="button">Отмена</button>
+        <button class="btn-ok" type="submit">Ok</button>
+      </div>
+    </form>      
+  </div>
+
+  <div class="modal edit">
+    <h2 class="modal-title">Изменить тикет</h2>
+    <form class="modal-form">
+      <div class="description-wrap">
+        <span>Краткое описание</span>
+        <input class="modal-input" type="text" name="имя_поля">
+      </div>
+      <div class="description-wrap">
+        <span>Подробное описание</span>
+        <textarea class="modal-textarea" name="имя_поля"></textarea>
+      </div>
+      <div class="modal-btns">
+        <button class="btn-cancel" type="button">Отмена</button>
+        <button class="btn-ok" type="submit">Ok</button>
+      </div>
+    </form>      
+  </div>
+
+  <div class="modal delete">
+    <h2 class="modal-title">Удалить тикет</h2>
+    <form class="modal-form">
+      <div class="description-wrap">
+        <span>Вы уверены, что хотите удалить тикет? Это действие необратимо</span>
+      <div class="modal-btns">
+        <button class="btn-cancel" type="button">Отмена</button>
+        <button class="btn-ok" type="submit">Ok</button>
+      </div>
+    </form>      
+  </div>
+</body>
+</html>

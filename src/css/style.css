@@ -1,0 +1,214 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  width: 60%;
+  position: relative;
+}
+
+.add-tickets{
+  padding: 10px 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.list-tickets{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.ticket{
+  width: 100%;
+  padding: 0 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrap{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ticket-input-wrap{
+  display: flex;
+  align-items: center;
+}
+
+.ticket-input{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.ticket-input:checked+.ticket-input-span::before{
+  background-image: url("../img/checkbox_yes_64.png");
+}
+
+.description{
+  max-width: 370px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  display: none;
+}
+
+.ticket-title{
+  margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+
+.ticket-input-span::before{
+  content: '';
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/checkbox_not_64.png");
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.ticket-btns{
+  display: flex;
+  align-items: center;
+}
+
+.ticket-date{
+  margin-right: 30px;
+  user-select: none;
+}
+
+.ticket-btn-edit{
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/edit_64.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.ticket-btn-delete{
+  margin: 0 5px;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/del_64.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+/* Модальные окна */
+
+/* Центрируем заголовок */
+.modal-title {
+  text-align: center;
+}
+
+/* Располагаем блоки описания */
+.description-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.description-wrap>textarea{
+  height: 80px;
+  resize: none;
+  white-space: pre-wrap; /* Сохраняет форматирование текста */
+  font-family: monospace; /* Использует моноширинный шрифт для корректного отображения отступов */
+}
+
+.description-wrap>span{
+  margin-bottom: 5px;
+}
+
+.description-wrap>input{
+  height: 30px;
+}
+
+/* Выравниваем кнопки по правому краю */
+.modal-btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-right: 10px;
+}
+
+.modal-btns>button{
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modal{
+  display: none;
+  padding: 10px 0;
+  position:fixed;
+  /* left:50%;
+  top:50%;
+  transform:translate(-50%,-50%); */
+  width:50vw;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+
+.delete span{
+  font-size: 30px;
+}
+
+.loader-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
