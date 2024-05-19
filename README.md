@@ -1,6 +1,6 @@
 ![CI](https://github.com/AntistesEM/ahj-homeworks_http-frontend/actions/workflows/web.yml/badge.svg)
 
-![Ссылка на GitHub Pages](https://antistesem.github.io/ahj-homeworks_http-frontend/)
+[Ссылка на GitHub Pages](https://antistesem.github.io/ahj-homeworks_http-frontend/)
 
 # Домашнее задание к занятию "7. Работа с HTTP"
 
