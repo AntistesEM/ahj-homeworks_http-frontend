@@ -1,4 +1,5 @@
-![CI](https://github.com/AntistesEM/testing_task-1/actions/workflows/web.yml/badge.svg)
+![CI](https://github.com/AntistesEM/hj-homeworks_http-frontend/actions/workflows/web.yml/badge.svg)
+![Ссылка на GitHub Pages](https://antistesem.github.io/ahj-homeworks_http-frontend/)
 
 # Домашнее задание к занятию "7. Работа с HTTP"
 
