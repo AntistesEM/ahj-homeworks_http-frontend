@@ -2,6 +2,10 @@
 
 [Ссылка на GitHub Pages](https://antistesem.github.io/ahj-homeworks_http-frontend/)
 
+[Ссылка на репозиторий Frontend](https://github.com/AntistesEM/ahj-homeworks_http-frontend?tab=readme-ov-file)
+
+[Ссылка на репозиторий Backend](https://github.com/AntistesEM/ahj-homeworks_http-backend)
+
 # Домашнее задание к занятию "7. Работа с HTTP"
 
 Правила сдачи задания:
